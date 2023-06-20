@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slider</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./src/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/tokyo-night-dark.min.css"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="slider">
+      <!-- content -->
+      <section class="section active-section">
+        <h1>Section 1</h1>
+      </section>
+      <section class="section">
+        <h1>This slide have code</h1>
+        <pre><code class="language-javascript">
+          function greeting() {
+          console.log("Hello, world!");
+          }
+        </code></pre>
+      </section>
+      <section class="section">
+        <h1>This slide have maths</h1>
+        <p>
+          When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and
+          they are \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+        </p>
+      </section>
+      <section class="section">
+        <h1>section 4</h1>
+      </section>
+      <!-- end-content -->
+    </div>
+    <!-- scripts -->
+    <script src="src/main.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

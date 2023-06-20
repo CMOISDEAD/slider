@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #1d1d1d;
+  color: #ffffff;
+}
+
+.slider {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.section {
+  height: 100vh;
+  padding: 10vh 2vw;
+  transition: transform 0.5s ease;
+}
+
+h1,
+p,
+pre {
+  margin: 1rem 0;
+}
