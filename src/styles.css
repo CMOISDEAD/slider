@@ -9,7 +9,7 @@ body {
   overflow: hidden;
   background: #1d1d1d;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h1,
@@ -97,4 +97,36 @@ h4 {
 .section-double img {
   max-width: 100%;
   height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+table thead {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #333333;
 }

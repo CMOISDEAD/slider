@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Slider</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../src/styles.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/tokyo-night-dark.min.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <div class="slider">
+    <!-- content -->
+    <section class="section welcome active-section">
+      <div class="content">
+        <h1>Simple Slider</h1>
+        <h3>
+          By:
+          <a href="https://github.com/CMOISDEAD" target="_blank">CMOISDEAD</a>
+        </h3>
+        <h4>Date: 2023-06-21</h4>
+      </div>
+    </section>
+
+    <section class="section section-double">
+      <div class="section-content">
+        <h1>Content support</h1>
+        <p>
+          Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+          reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+          ex esse exercitation amet.
+        </p>
+        <ul>
+          <li>Minimalist</li>
+          <li>Faster</li>
+          <li>And for geeks (Vi support)</li>
+        </ul>
+      </div>
+      <div class="section-image-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Solvay_conference_1927.jpg/800px-Solvay_conference_1927.jpg"
+          alt="image" />
+        <p class="caption">Figure 1: Solvey conference (1927)</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h1>Math support</h1>
+      <p>Slider have support for <strong>math equations</strong> to.</p>
+      <p>
+        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and
+        they are \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+      </p>
+      <p>
+        \[ \begin{bmatrix} 1 & 2 & 3\\ a & b & c \end{bmatrix}\] \[\idotsint_V
+        \mu(u_1,\dots,u_k) \,du_1 \dots du_k\]
+      </p>
+    </section>
+
+    <section class="section">
+      <h1>Code support</h1>
+      <pre>
+        <code class="language-typescript">
+          const hello = (name: string) => {
+          console.log(`hello ${name}`);
+          }
+          hello("Jhon Doe")
+        </code>
+        <code class="language-java">
+          public static void main() {
+          System.out.println("Hello, World!")
+          }
+        </code>
+      </pre>
+    </section>
+
+    <section class="section">
+      <h1>Vi support for keymaps</h1>
+      <table>
+        <caption>
+          Vi Keyboard Shortcuts
+        </caption>
+        <thead>
+          <tr>
+            <th>Key Combination</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>jk</td>
+            <td>Scroll down and up, respectively</td>
+          </tr>
+          <tr>
+            <td>gg</td>
+            <td>Go to the beginning of the page</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>Go to the end of the page</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Some keymaps inspired on vi with the purpose of make slider more
+        flexible and faster in use.
+      </p>
+    </section>
+    <!-- end-content -->
+  </div>
+  <!-- scripts -->
+  <script src="../src/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>
