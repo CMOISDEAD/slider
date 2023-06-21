@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("keydown", (event) => {
     const { key: name } = event;
     if (name === "ArrowDown" || name == "ArrowRight" || name == "j") {
@@ -9,20 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollToPreviousSection();
     } else if (name == "g") {
       event.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      const firstChild = document.querySelector(".slider").firstElementChild;
+      const currentSection = document.querySelector(".active-section");
+      changeSection(currentSection, firstChild);
     } else if (name == "G") {
-      // move this to a function ?
       const lastChild = document.querySelector(".slider").lastElementChild;
       const currentSection = document.querySelector(".active-section");
-      currentSection.classList.remove("active-section");
-      lastChild.classList.add("active-section");
-      window.scrollTo({
-        top: lastChild.offsetTop,
-        behavior: "smooth",
-      });
+      changeSection(currentSection, lastChild);
     } else if (name == "F11") {
       // this doesn't work as expected, because is not trigger when event is out
       refreshViewport();
@@ -37,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentSection = document.querySelector(".active-section");
     window.scrollTo({
       top: currentSection.offsetTop,
-      behavior: "smooth",
+      behavior: "instant",
     });
   };
 
