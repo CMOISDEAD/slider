@@ -3,6 +3,8 @@
 ## Why ? 😕
 Why not ? I like to hack my tools.
 
+look the demo: https://shit-slider.netlify.app/
+
 ## Features 🍻
 - Minimalist and no over-bloated.
 - Code highlight.
