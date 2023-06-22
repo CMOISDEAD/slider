@@ -1,4 +1,6 @@
 # Simple Slider (💩 Slider)
+![image](https://github.com/CMOISDEAD/slider/assets/51010598/b1342190-7517-4640-a39c-96e58effb060)
+<p align="center">i guess you never see some :poop: before...</p>
 
 ## Why ? 😕
 Why not ? I like to hack my tools.
